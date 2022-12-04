@@ -1,0 +1,153 @@
+/*
+azul: #012030
+verde: #45C4B0
+verde menta: #9AEBA3
+amarillo claro: #DAFDBA
+*/
+
+html{
+    font-family: 'Syne Mono', monospace;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #012030;
+    font-size: 1.2em;
+}
+
+a:focus{
+    background-color:yellow;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph{
+    line-height: 1.5em;
+}
+.container{
+    height: 100vh;
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width:960px;
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    box-shadow: -10px 10px 5px #45C4B0;
+    border-radius: 5px;
+    position: relative;
+    overflow: scroll;
+}
+
+.content{
+    padding:1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #007991;
+}
+th{
+    display: none;
+}
+/**/
+.actions{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.return{
+    height: 50px;
+    width: 50px;
+    background-color: #45C4B0;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding:1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #DAFDBA;
+}
+
+.fa-solid.fa-star, .fa-regular.fa-star{
+    color: rgb(255, 196, 0);
+}
+
+.fa-solid.fa-download{
+    color: #9AEBA3;
+}
+
+.title-item{
+    font-size: 2em;
+    border-bottom: solid 4px #9AEBA3;
+    padding-bottom: 1em;
+}
+
+.position{
+    background-color: #9AEBA3;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 0.6em;
+}
+
+.imgSteampunk{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+@media (min-width:900px){
+    td{
+        display: table-cell;
+        width: auto;
+    }
+    
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    th{
+        display: table-cell;
+    }
+    .content{
+        padding: 1.8em;
+    }
+}
+
+@media (min-height: 550px){
+    .content{
+        height: 500px;
+    }
+}
